@@ -107,7 +107,7 @@ const updateProduct = async (req: Request, res: Response) => {
 
 
 
-export const PhoneController = {
+export const ProductController = {
     createProduct,
     getAllProduct,
     getSingleProduct,
