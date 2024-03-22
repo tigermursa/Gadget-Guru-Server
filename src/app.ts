@@ -10,6 +10,7 @@ app.use(cors());
 
 // Application routes place:
 app.use('/api/v1/phone', PhoneRoutes);
+app.use('/api/v2/product', PhoneRoutes);
 
 app.get('/', (req, res) => {
     res.send(
