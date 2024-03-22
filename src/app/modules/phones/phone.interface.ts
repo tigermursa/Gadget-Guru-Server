@@ -1,12 +1,10 @@
 import { Model } from "mongoose";
 
-
-
-export interface PhoneWithStatic extends Model<Phone> {
-    isUserExists(id: string): Promise<Phone | null>;
+export interface ProductWithStatic extends Model<Product> {
+    isUserExists(id: string): Promise<Product | null>;
 }
 
-export type Phone = {
+export type Product = {
     image: string;
     name: string;
     brand: string;
@@ -18,27 +16,7 @@ export type Phone = {
     description: string;
     review: number;
     rating: number;
-    priceV1: string;
-    ramV1: string;
-    priceV2: string;
-    ramV2: string;
     tag: string;
-    fullSpec: {
-        operatingSystem: string;
-        processor: string;
-        display: string;
-        cameras: {
-            main: string;
-            ultraWide: string;
-            macro: string;
-            depth: string;
-        };
-        battery: string;
-        charging: string;
-        dimensions: string;
-        weight: string;
-        colors: string[];
-    };
     isDeleted?: boolean;
 };
 
