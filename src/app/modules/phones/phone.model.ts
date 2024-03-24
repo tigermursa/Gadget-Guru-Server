@@ -10,8 +10,8 @@ const phoneSchema = new Schema<Phone, PhoneWithStatic>(
         brand: { type: String, required: true },
         categories: { type: String, required: true },
         price: { type: Number, required: true },
-        flashSale: { type: Boolean, required: true },
-        isNew: { type: Boolean, required: true },
+        flashSale: { type: Boolean, default: false },
+        isNew: { type: Boolean, default: false },
         descriptionMini: { type: String, required: true },
         description: { type: String, required: true },
         review: { type: Number, required: true },
@@ -20,7 +20,7 @@ const phoneSchema = new Schema<Phone, PhoneWithStatic>(
         ramV1: { type: String, required: true },
         priceV2: { type: String, required: true },
         ramV2: { type: String, required: true },
-        tag: { type: String, required: true },
+        tag: { type: String, default: "New" },
         // fullSpec: {
         //     type: {
         //         operatingSystem: { type: String, required: true },
