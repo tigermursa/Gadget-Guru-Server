@@ -4,6 +4,10 @@ export interface ProductWithStatic extends Model<Product> {
     isUserExists(id: string): Promise<Product | null>;
 }
 
+
+
+
+
 export type Product = {
     image: string;
     name: string;

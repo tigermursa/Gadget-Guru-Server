@@ -23,22 +23,22 @@ export type Phone = {
     priceV2: string;
     ramV2: string;
     tag: string;
-    fullSpec: {
-        operatingSystem: string;
-        processor: string;
-        display: string;
-        cameras: {
-            main: string;
-            ultraWide: string;
-            macro: string;
-            depth: string;
-        };
-        battery: string;
-        charging: string;
-        dimensions: string;
-        weight: string;
-        colors: string[];
-    };
+    // fullSpec: {
+    //     operatingSystem: string;
+    //     processor: string;
+    //     display: string;
+    //     cameras: {
+    //         main: string;
+    //         ultraWide: string;
+    //         macro: string;
+    //         depth: string;
+    //     };
+    //     battery: string;
+    //     charging: string;
+    //     dimensions: string;
+    //     weight: string;
+    //     colors: string[];
+    // };
     isDeleted?: boolean;
 };
 

@@ -17,22 +17,22 @@ const PhoneValidationZodSchema = z.object({
     priceV2: z.string(),
     ramV2: z.string(),
     tag: z.string(),
-    fullSpec: z.object({
-        operatingSystem: z.string(),
-        processor: z.string(),
-        display: z.string(),
-        cameras: z.object({
-            main: z.string(),
-            ultraWide: z.string(),
-            macro: z.string(),
-            depth: z.string(),
-        }),
-        battery: z.string(),
-        charging: z.string(),
-        dimensions: z.string(),
-        weight: z.string(),
-        colors: z.array(z.string()),
-    }),
+    // fullSpec: z.object({
+    //     operatingSystem: z.string(),
+    //     processor: z.string(),
+    //     display: z.string(),
+    //     cameras: z.object({
+    //         main: z.string(),
+    //         ultraWide: z.string(),
+    //         macro: z.string(),
+    //         depth: z.string(),
+    //     }),
+    //     battery: z.string(),
+    //     charging: z.string(),
+    //     dimensions: z.string(),
+    //     weight: z.string(),
+    //     colors: z.array(z.string()),
+    // }),
     isDeleted: z.boolean().default(false),
 });
 
