@@ -2,7 +2,7 @@
 
 ## Live Hosted Url
 
-[Live Hosted API](https://gadget-guru-server-rho.vercel.app/api/v1/phone/get)
+[Live Hosted API](https://gadget-guru-server-rho.vercel.app)
 
 ## About
 
